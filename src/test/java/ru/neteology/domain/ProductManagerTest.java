@@ -14,7 +14,12 @@ class ProductManagerTest {
     private ProductRepository repository = new ProductRepository();
     private ProductManager manager = new ProductManager(repository);
 
-    private Product book1 = new Book(1, "Один", 2, "Автор1");
+    private Product book1;
+
+    {
+        book1 = new Book(1, "Один", 2, "Автор1");
+    }
+
     private Product book2 = new Book(2, "Два", 2, "Автор2");
     private Product book3 = new Book(3, "Три", 2, "Автор3");
     private Product book4 = new Book(4, "Четыре", 2, "Автор4");
